@@ -19,7 +19,7 @@ Into your base/master html page, include the jsfloat.js file into your <head></h
 
 ## Usage
 
-console.log([number like 0.1 or 1].add([number like 0.1 or 1])); 
-console.log([number like 0.1 or 1].substract([number like 0.1 or 1])); 
-console.log([number like 0.1 or 1].multiply([number like 0.1 or 1])); 
-console.log([number like 0.1 or 1].divide([number like 0.1 or 1]));
+- console.log([number like 0.1 or 1].add([number like 0.1 or 1])); 
+- console.log([number like 0.1 or 1].substract([number like 0.1 or 1])); 
+- console.log([number like 0.1 or 1].multiply([number like 0.1 or 1])); 
+- console.log([number like 0.1 or 1].divide([number like 0.1 or 1]));
