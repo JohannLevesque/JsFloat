@@ -11,6 +11,12 @@ will show:
 With this snippet you will be allowed to do:
 console.log(0.1.add(0.2));
 
+## Integration
+
+Into your base/master html page, include the jsfloat.js file into your <head></head>.
+
+<script type="application/javascript" src="https://[yourwebappurl]/JsFloat.js"></script>
+
 ## Usage
 
 console.log([number like 0.1 or 1].add([number like 0.1 or 1]));
