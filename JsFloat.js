@@ -36,16 +36,16 @@ new function() {
 
 	/**
 	 * Returns the rounded value
-	 * @param {*} totalValue The value to add
+	 * @param {*} valueToAdd The value to add
 	 */
 	Number.prototype.add = function (valueToAdd) {
 		// Check all are defined
-		let totalValue = this;
-		if (isInvalidFloatValue(totalValue) || isInvalidFloatValue(valueToAdd) || valueToAdd === 0 || valueToAdd === "0")
-			return totalValue;
+		let currentvalue = this;
+		if (isInvalidFloatValue(currentvalue) || isInvalidFloatValue(valueToAdd) || valueToAdd === 0 || valueToAdd === "0")
+			return currentvalue;
 
 		// Check for decimal length
-		var decimalLength = Math.max(getFloatValueDecimalLength(totalValue), getFloatValueDecimalLength(valueToAdd));
+		var decimalLength = Math.max(getFloatValueDecimalLength(currentvalue), getFloatValueDecimalLength(valueToAdd));
 		if (decimalLength <= 0)
 			decimalLength = 0;
 
@@ -53,21 +53,21 @@ new function() {
 		var multiplier = Math.pow(10, decimalLength);
 
 		// Return the calculated value
-		return ((parseFloat(totalValue) * multiplier) + (parseFloat(valueToAdd) * multiplier)) / multiplier;
+		return ((parseFloat(currentvalue) * multiplier) + (parseFloat(valueToAdd) * multiplier)) / multiplier;
 	};
 
 	/**
 	 * Returns the rounded value
-	 * @param {*} totalValue The value to subsctract
+	 * @param {*} valueToSubstract The value to subsctract
 	 */
-	Number.prototype.substract = function (valueToAdd) {
+	Number.prototype.substract = function (valueToSubstract) {
 		// Check all are defined
-		let totalValue = this;
-		if (isInvalidFloatValue(totalValue) || isInvalidFloatValue(valueToAdd) || valueToAdd === 0 || valueToAdd === "0")
-			return totalValue;
+		let currentvalue = this;
+		if (isInvalidFloatValue(currentvalue) || isInvalidFloatValue(valueToSubstract) || valueToSubstract === 0 || valueToSubstract === "0")
+			return currentvalue;
 
 		// Check for decimal length
-		var decimalLength = Math.max(getFloatValueDecimalLength(totalValue), getFloatValueDecimalLength(valueToAdd));
+		var decimalLength = Math.max(getFloatValueDecimalLength(currentvalue), getFloatValueDecimalLength(valueToSubstract));
 		if (decimalLength <= 0)
 			decimalLength = 0;
 
@@ -75,21 +75,21 @@ new function() {
 		var multiplier = Math.pow(10, decimalLength);
 
 		// Return the calculated value
-		return ((parseFloat(totalValue) * multiplier) - (parseFloat(valueToAdd) * multiplier)) / multiplier;
+		return ((parseFloat(currentvalue) * multiplier) - (parseFloat(valueToSubstract) * multiplier)) / multiplier;
 	};
 
 	/**
 	 * Returns the rounded value
-	 * @param {*} secondValue The second value
+	 * @param {*} valueToApply The second value
 	 */
-	Number.prototype.multiply = function (secondValue) {
+	Number.prototype.multiply = function (valueToApply) {
 		// Check all are defined
 		let firstValue = this;
-		if (isInvalidFloatValue(firstValue) || isInvalidFloatValue(secondValue))
+		if (isInvalidFloatValue(firstValue) || isInvalidFloatValue(valueToApply))
 			return undefined;
 
 		// Check for decimal length
-		var decimalLength = Math.max(getFloatValueDecimalLength(firstValue), getFloatValueDecimalLength(secondValue));
+		var decimalLength = Math.max(getFloatValueDecimalLength(firstValue), getFloatValueDecimalLength(valueToApply));
 		if (decimalLength <= 0)
 			decimalLength = 0;
 
@@ -97,22 +97,22 @@ new function() {
 		var multiplier = Math.pow(10, decimalLength);
 
 		// Return the calculated value
-		return ((parseFloat(firstValue) * multiplier) * (parseFloat(secondValue) * multiplier)) / Math.pow(multiplier, 2);
+		return ((parseFloat(firstValue) * multiplier) * (parseFloat(valueToApply) * multiplier)) / Math.pow(multiplier, 2);
 	};
 
 
 	/**
 	 * Returns the rounded value
-	 * @param {*} secondValue The second value
+	 * @param {*} valueToApply The second value
 	 */
-	Number.prototype.divide = function (secondValue) {
+	Number.prototype.divide = function (valueToApply) {
 		// Check all are defined
 		let firstValue = this;
-		if (isInvalidFloatValue(firstValue) || isInvalidFloatValue(secondValue))
+		if (isInvalidFloatValue(firstValue) || isInvalidFloatValue(valueToApply))
 			return undefined;
 
 		// Check for decimal length
-		var decimalLength = Math.max(getFloatValueDecimalLength(firstValue), getFloatValueDecimalLength(secondValue));
+		var decimalLength = Math.max(getFloatValueDecimalLength(firstValue), getFloatValueDecimalLength(valueToApply));
 		if (decimalLength <= 0)
 			decimalLength = 0;
 
@@ -120,6 +120,6 @@ new function() {
 		var multiplier = Math.pow(10, decimalLength);
 
 		// Return the calculated value
-		return ((parseFloat(firstValue) * multiplier) / (parseFloat(secondValue) * multiplier)) / Math.pow(multiplier, 2);
+		return ((parseFloat(firstValue) * multiplier) / (parseFloat(valueToApply) * multiplier));
 	};
 }();
