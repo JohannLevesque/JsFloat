@@ -14,7 +14,7 @@ will show:
 0.30000000000000004
 ```
 
-You can find all the related information about this strange behavior here: 
+You can find all the related information about this strange behavior here:
 
 https://javascript.plainenglish.io/why-0-1-0-2-0-3-in-javascript-d7e218224a72?gi=d1a3079b3e49
 
