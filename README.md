@@ -4,15 +4,15 @@ Snippet to add **add**, **substract**, **multiply** and **divide** prototype met
 
 Indeed in js, 
 
-console.log(**0.1 + 0.2**); 
+`console.log(**0.1 + 0.2**);`
 
 will show:
 
-'**0.30000000000000004**'. 
+`'**0.30000000000000004**'`
 
 With this snippet you will be allowed to do:
 
-console.log(**0.1.add(0.2)**); // => *0.3 will be shown*
+`console.log(**0.1.add(0.2)**); // => *0.3 will be shown*`
 
 ## Integration
 
@@ -20,7 +20,7 @@ Into your base/master html page, include the JsFloat.js file into your <head>...
 
 Sample of include for your html page:
 
-<script type="application/javascript" src="https://[yourwebappurl]/JsFloat.js"></script>
+`<script type="application/javascript" src="https://[yourwebappurl]/JsFloat.js"></script>`
 
 ## Usage
 
@@ -33,11 +33,11 @@ Considering input1 and input2 float numbers (the input2 can be a string represen
 
 ### Sample
 
-// Get the substraction between two string representing float numbers
+`// Get the substraction between two string representing float numbers
 let string1 = prompt("First string. Fill a float number"), string2 = prompt("Second string. Fill a float number");
 
 // Parse the first string to be able to call the number prototype method "substract"
 let float1 = parseFloat(string1);
 
 // Show result
-alert(isNaN(float1) ? "First string not representing a float number" : `The result of the substract is: ${float1.substract(string2)}`);
+alert(isNaN(float1) ? "First string not representing a float number" : \`The result of the substract is: ${float1.substract(string2)}\`);`
