@@ -11,13 +11,23 @@ console.log(0.1 + 0.2);
 will show:
 
 ``` Javascript
-`0.30000000000000004`
+0.30000000000000004
 ```
+
+You can find all the related information about this strange behavior here:
+
+https://javascript.plainenglish.io/why-0-1-0-2-0-3-in-javascript-d7e218224a72?gi=d1a3079b3e49
 
 With this snippet you will be allowed to do:
 
 ``` Javascript
 console.log(0.1.add(0.2)); // => 0.3 will be shown
+
+```
+Or to do:
+
+``` Javascript
+console.log(0.1.divide("0.00073")); // => 136.986301369863 will b shown
 ```
 
 ## Integration
