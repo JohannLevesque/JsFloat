@@ -34,11 +34,14 @@ Considering input1 and input2 float numbers (the input2 can be a string represen
 ### Sample
 
 // Get the substraction between two string representing float numbers
+
 let string1 = prompt("First string. Fill a float number"), string2 = prompt("Second string. Fill a float number");
+
 
 // Parse the first string to be able to call the number prototype method "substract"
 
 let float1 = parseFloat(string1);
+
 
 // Show result
 
