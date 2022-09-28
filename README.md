@@ -24,7 +24,20 @@ Sample of include for your html page:
 
 ## Usage
 
-- console.log([number like 0.1 or 1].add([number like 0.1 or 1])); 
-- console.log([number like 0.1 or 1].substract([number like 0.1 or 1])); 
-- console.log([number like 0.1 or 1].multiply([number like 0.1 or 1])); 
-- console.log([number like 0.1 or 1].divide([number like 0.1 or 1]));
+Considering input1 and input2 float numbers (the input2 can be a string representing a float number like "1.08") like 0.1 or -37.008: 
+
+- console.log(input1.add(input2)); 
+- console.log(input1.substract(input2)); 
+- console.log(input1.multiply(input2)); 
+- console.log(input1.divide(input2));
+
+### Sample
+
+// Get the substraction between two string representing float numbers
+let string1 = prompt("First string. Fill a float number"), string2 = prompt("Second string. Fill a float number");
+
+// Parse the first string to be able to call the number prototype method "substract"
+let float1 = parseFloat(string1);
+
+// Show result
+alert(isNaN(float1) ? "First string not representing a float number" : `The result of the substract is: ${float1.substract(string2)}`);
