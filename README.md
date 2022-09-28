@@ -58,5 +58,5 @@ let string1 = prompt("First string. Fill a float number"), string2 = prompt("Sec
 let float1 = parseFloat(string1);
 
 // Show result
-alert(isNaN(float1) ? "First string not representing a float number" : \`The result of the substract is: ${float1.substract(string2)}\`);
+alert(isNaN(float1) ? "First string not representing a float number" : `The result of the substract is: ${float1.substract(string2)}`);
 ```
