@@ -4,15 +4,21 @@ Snippet to add **add**, **substract**, **multiply** and **divide** prototype met
 
 Indeed in js, 
 
-`console.log(**0.1 + 0.2**);`
+``` Javascript
+console.log(0.1 + 0.2);
+```
 
 will show:
 
-`'**0.30000000000000004**'`
+``` Javascript
+`0.30000000000000004`
+```
 
 With this snippet you will be allowed to do:
 
-`console.log(**0.1.add(0.2)**); // => *0.3 will be shown*`
+``` Javascript
+console.log(0.1.add(0.2)); // => 0.3 will be shown
+```
 
 ## Integration
 
@@ -20,7 +26,9 @@ Into your base/master html page, include the JsFloat.js file into your <head>...
 
 Sample of include for your html page:
 
-`<script type="application/javascript" src="https://[yourwebappurl]/JsFloat.js"></script>`
+``` HTML
+<script type="application/javascript" src="https://[yourwebappurl]/JsFloat.js"></script>
+```
 
 ## Usage
 
