@@ -53,7 +53,7 @@ new function() {
 		var multiplier = Math.pow(10, decimalLength);
 
 		// Return the calculated value
-		return ((parseFloat(currentvalue) * multiplier) + (parseFloat(valueToAdd) * multiplier)) / multiplier;
+		return ((currentvalue * multiplier) + (parseFloat(valueToAdd) * multiplier)) / multiplier;
 	};
 
 	/**
@@ -75,7 +75,7 @@ new function() {
 		var multiplier = Math.pow(10, decimalLength);
 
 		// Return the calculated value
-		return ((parseFloat(currentvalue) * multiplier) - (parseFloat(valueToSubstract) * multiplier)) / multiplier;
+		return ((currentvalue * multiplier) - (parseFloat(valueToSubstract) * multiplier)) / multiplier;
 	};
 
 	/**
